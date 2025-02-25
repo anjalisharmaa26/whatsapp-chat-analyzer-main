@@ -95,7 +95,7 @@ if uploaded_file is not None:
             with col1:
                 st.dataframe(new_df)
             with col2:
-                ax.bar(x.index, x.values, color = 'red')
+                ax.bar(x.index, x.values, color = 'orange')
                 plt.xticks(rotation = 'vertical')
                 st.pyplot(fig)
 
@@ -132,7 +132,7 @@ if uploaded_file is not None:
             fig, ax = plt.subplots(figsize=(6, 6))
 
             # Define Colors
-            colors = sns.color_palette("pastel")
+            colors = sns.color_palette("Set2")
 
             # Creating Pie Chart
             wedges, texts, autotexts = ax.pie(
@@ -157,5 +157,3 @@ if uploaded_file is not None:
 
             ax.set_title("Top Used Emojis", fontsize=18, fontweight='bold', pad=20)
             st.pyplot(fig)
-
-
